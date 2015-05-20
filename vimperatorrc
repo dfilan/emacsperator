@@ -150,8 +150,7 @@ noremap <C-x>l :o<SPACE>
 " noremap J F
 " on dvorak, j is on the left middle finger, f is on the right index finger.
 " i prefer f
-noremap f F
-noremap j f
+noremap j F
 
 " Extended hint mode with M-j
 "  ; - focus link, a - save, y - copy link, O - :open query, T - for :tabopen ...
