@@ -139,18 +139,10 @@ noremap <C-x><C-b> B
 noremap <C-x>t :t<SPACE>
 noremap <C-x>l :o<SPACE>
  
-" Open hints in new tab by default (switch roles of f and F)
-" noremap f F
-" noremap F f
-" Note: if you try to set F to be "open hint in current tab", this will conflict
-" with its other binding as "go forward".
-
-" Switch hints to letter "j", for right hand usage
-" noremap j f
-" noremap J F
-" on dvorak, j is on the left middle finger, f is on the right index finger.
-" i prefer f
-noremap j F
+" Hints should be h. This makes more sense, and works more nicely on the dvorak
+" keyboard layout.
+noremap h f
+noremap H F
 
 " Extended hint mode with M-j
 "  ; - focus link, a - save, y - copy link, O - :open query, T - for :tabopen ...
@@ -233,9 +225,6 @@ map <C-c><C-u> gU
  
 " Restart with C-c C-r
 map <C-c><C-r> :restart<CR>
-
-" Refresh current page with C-c r
-map <C-c>r :reload<CR>
  
 " Tab moving helpers
 map <A-m> :tabmove<SPACE>
