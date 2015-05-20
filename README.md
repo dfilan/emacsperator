@@ -1,2 +1,13 @@
 # emacsperator
 A .vimperatorrc file that makes vimperator act like emacs
+
+Based on [this](https://gist.github.com/avendael/7028513), and edited to work with versions of vimperator past 3.0, by removing references to guioptions and showtabline, and fixing various other stuff
+
+remaining issues:
+
+ * when in hint mode, C-g opens a find dialog instead of actually exiting
+ * firefox interprets M-v as 'let's open the view menu because i'm an idiot' instead of jump scrolling up. this should be fixed by setting ui.key.menuAccessKey in about:config to 0, but it isn't. This appears to be a bug in firefox (using firefox 38.0 on ubuntu 14.04)
+ * can't figure out a way to focus the background after e.g. typing in a text field without clicking, like the sort of noob who doesn't use vimperator
+ * vimperator keybindings won't work after i have clicked 'pause' on a youtube video. i have to click outside the video to get them to work again.
+
+note: there may also be issues with various keybindings here that i simply didn't feel like using and therefore didn't bother to test. ymmv.
