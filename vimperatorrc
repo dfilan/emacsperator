@@ -14,7 +14,7 @@ set noscrollbars
 " colo zenburn
  
 " Default editor when C-i is invoked
-set editor=emacsclient
+set editor=emacs
  
 " Command line and search patterns history
 set history=10000
